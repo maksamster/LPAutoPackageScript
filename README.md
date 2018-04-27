@@ -2,7 +2,6 @@
 iOS自动打包
 
 # 使用方法:
-# step0 : pod更新框架
 # step1 : 将LPAutoPackageScript整个文件夹拖入到项目主目录,项目主目录,项目主目录~~~(重要的事情说3遍!😊😊😊)
 # step2 : 打开LPAutoPackageScript.sh文件,修改 "项目自定义部分" 配置好项目参数
 # step3 : 打开终端, cd到LPAutoPackageScript文件夹 (ps:在终端中先输入cd ,直接拖入LPAutoPackageScript文件夹,回车)
