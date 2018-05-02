@@ -163,8 +163,8 @@ then
 if [ "$method" = "1" ] ; then
 echo "\033[33;1m1. AdHoc包上传蒲公英       \033[0m"
 #通过api上传到蒲公英当中
-pgyerUKey="2123d4c5eaccb481c78de1ae776f6d5e"  # 这里替换蒲公英ukey
-pgyerApiKey="8b82ed1920710b04ce187299419708" # 这里替换蒲公英apiKey
+pgyerUKey="2123d4c5eaccb481c776f6d5e"  # 这里替换蒲公英ukey
+pgyerApiKey="8b82ed187299419708" # 这里替换蒲公英apiKey
 
 RESULT=$(curl -F "file=@$export_ipa_path/$ipa_name.ipa" -F "uKey=$pgyerUKey" -F "_api_key=$pgyerApiKey" -F "publishRange=2" http://www.pgyer.com/apiv1/aPP/upload)
 echo "$export_ipa_path/$ipa_name.ipa"
@@ -175,7 +175,7 @@ echo 蒲公英网址 https://www.pgyer.com
 elif [ "$method" = "2" ] ; then
 echo "\033[33;1m上传fir中...    \033[0m"
 # 替换成自己的Fir平台的token
-fir login 1b5fd56217d365a834c66534ce69b3bc
+fir login 1b5fd56265a834c66534cec
 fir publish $export_ipa_path/$ipa_name.ipa
 echo "完成上传"
 elif [ "$method" = "3" ] ; then
